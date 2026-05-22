@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5" name="viewport"/>
+<title>Care Masters Women and Family Services – Mississauga</title>
+<meta content="Care Masters Women and Family Services supports at-risk women, families, and youth in Mississauga with counselling, food aid, and mentorship." name="description"/>
+<meta content="Care Masters Women and Family Services" property="og:title"/>
+<meta content="Cultivating strength through counselling, food aid, and youth mentorship in Mississauga." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Care Masters Women and Family Services" name="twitter:title"/>
+<meta content="Cultivating strength through counselling, food aid, and youth mentorship in Mississauga." name="twitter:description"/>
+<style>
+    :root {
+      --primary: #4A7C59;
+      --secondary: #E8D5B7;
+      --accent: #F4A261;
+      --text: #2D3E2F;
+      --background: #FDF8F0;
+      --muted: #F0EBE1;
+      --heading: 'Playfair Display', Georgia, serif;
+      --body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 24px;
+      --shadow: 0 12px 30px rgba(45, 62, 47, 0.06);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      font-family: var(--body);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--heading);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    img { max-width: 100%; display: block; border-radius: var(--radius); }
+
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+
+    
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(253, 248, 240, 0.88);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--secondary);
+      padding: 0.75rem 0;
+    }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-header .logo {
+      font-family: var(--heading);
+      font-size: 1.2rem;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+    .site-header .logo small {
+      display: block;
+      font-size: 0.65rem;
+      font-family: var(--body);
+      font-weight: 400;
+      color: var(--text);
+      opacity: 0.7;
+      letter-spacing: 0.02em;
+    }
+
+    
+    .proof-strip {
+      background: var(--muted);
+      padding: 0.6rem 0;
+      font-size: 0.85rem;
+      border-bottom: 1px solid var(--secondary);
+    }
+    .proof-strip .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      align-items: center;
+    }
+    .proof-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .proof-strip .dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 0.2rem;
+    }
+
+    
+    .hero {
+      padding: 3rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.8rem;
+      max-width: 32rem;
+      color: #3f5542;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.8rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: var(--primary);
+      color: white;
+      border: 1px solid transparent;
+      transition: 0.2s;
+      cursor: pointer;
+      font-family: var(--body);
+    }
+    .btn-outline {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    .btn:hover { text-decoration: none; filter: brightness(1.08); }
+
+    .hero-image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-image img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 40% 60% 30% 70% / 50% 40% 60% 50%;
+      box-shadow: 0 20px 40px rgba(74, 124, 89, 0.15);
+    }
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(244, 162, 97, 0.10), transparent 70%);
+      pointer-events: none;
+    }
+
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent);
+      margin-top: 0.3rem;
+      border-radius: 4px;
+    }
+
+    
+    .about-section {
+      padding: 4rem 0;
+      background: var(--muted);
+      position: relative;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .about-text p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+    .about-image img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 60% 40% 40% 60% / 60% 50% 50% 40%;
+    }
+
+    
+    .services-section {
+      padding: 4rem 0;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.8rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .service-card:hover { transform: translateY(-4px); }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-card .card-body {
+      padding: 1.2rem 1.4rem 1.6rem;
+    }
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+      color: var(--primary);
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    
+    .why-section {
+      padding: 4rem 0;
+      background: var(--background);
+    }
+    .scroll-row {
+      display: flex;
+      gap: 1.8rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .scroll-row::-webkit-scrollbar { height: 6px; }
+    .scroll-row::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 12px; }
+    .why-card {
+      flex: 0 0 280px;
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.8rem 1.5rem;
+      box-shadow: var(--shadow);
+      transform: rotate(-0.5deg);
+      transition: transform 0.2s;
+      scroll-snap-align: start;
+    }
+    .why-card:nth-child(2) { transform: rotate(0.8deg); }
+    .why-card:nth-child(3) { transform: rotate(-0.3deg); }
+    .why-card:hover { transform: rotate(0deg) scale(1.01); }
+    .why-card h4 { font-size: 1.1rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .why-card p { font-size: 0.95rem; }
+
+    
+    .gallery-section {
+      padding: 4rem 0;
+      background: var(--muted);
+    }
+    .masonry {
+      columns: 2 240px;
+      column-gap: 1.2rem;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1.2rem;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      border-radius: 0;
+    }
+
+    
+    .cta-section {
+      padding: 5rem 0;
+      background: var(--primary);
+      background-image: radial-gradient(circle at 20% 50%, rgba(232, 213, 183, 0.12) 0%, transparent 60%);
+      text-align: center;
+      color: white;
+    }
+    .cta-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .cta-section p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+      font-size: 1.05rem;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-buttons .btn {
+      background: white;
+      color: var(--primary);
+      border: none;
+    }
+    .cta-buttons .btn-outline-light {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+    .cta-buttons .btn-outline-light:hover { background: white; color: var(--primary); }
+
+    
+    .contact-section {
+      padding: 4rem 0;
+      background: var(--background);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    .contact-details p {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+    .contact-details a {
+      font-weight: 500;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--secondary);
+      border-radius: 30px;
+      font-family: var(--body);
+      background: white;
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+    .contact-form textarea { min-height: 100px; border-radius: 24px; }
+    .contact-form .btn { width: 100%; }
+
+    
+    .site-footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--secondary);
+      font-size: 0.85rem;
+      color: #5a6b5c;
+    }
+    .site-footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .site-footer a { color: var(--primary); }
+
+    
+    @media (max-width: 720px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-image img { height: 280px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .site-header .logo { font-size: 1rem; }
+      .proof-strip .container { gap: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<div class="logo">
+      Care Masters
+      <small>Women and Family Services</small>
+</div>
+<div style="font-size:0.85rem; color:var(--primary);">Mississauga · ON</div>
+</div>
+</header>
+<div class="proof-strip">
+<div class="container">
+<span><span class="dot"></span> Serving Mississauga, ON &amp; surrounding area</span>
+<span><span class="dot"></span> Nonprofit · Counselling · Food aid · Youth</span>
+<span><span class="dot"></span> <a href="https://www.caremasters.ca" rel="noopener" target="_blank">Source record</a></span>
+</div>
+</div>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-text">
+<h1>Growing Stronger Together</h1>
+<p>Care Masters Women and Family Services supports at-risk women, families, and youth in Mississauga with counselling, food aid, and mentorship.</p>
+<div class="hero-actions">
+<a class="btn" href="#summary">Read the summary</a>
+<a class="btn btn-outline" href="https://www.caremasters.ca" rel="noopener" target="_blank">Check source record</a>
+</div>
+</div>
+<div class="hero-image">
+<img alt="Woman holding a blooming flower in a garden, soft sunlight" height="800" src="https://images.pexels.com/photos/15650070/pexels-photo-15650070.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</section>
+<section class="about-section" id="summary">
+<div class="container about-grid">
+<div class="about-text">
+<h2 class="section-title">Field Notes</h2>
+<p>Care Masters Women and Family Services is a nonprofit based in Mississauga, Ontario, dedicated to promoting health, relieving poverty, and supporting at-risk youth. We offer counselling, food assistance, and mentorship programs to help women, families, and young people build stronger futures.</p>
+<p>Our work is rooted in the community: every session, every meal, every workshop is a step toward lasting strength.</p>
+</div>
+<div class="about-image">
+<img alt="Diverse group of women and children sitting in a circle in a community center, warm lighting" height="800" src="https://images.pexels.com/photos/5710984/pexels-photo-5710984.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</section>
+<section class="services-section">
+<div class="container">
+<h2 class="section-title">Support Paths</h2>
+<div class="services-grid">
+<div class="service-card">
+<img alt="Counsellor speaking with a woman in a cozy office" height="800" src="https://images.pexels.com/photos/7579179/pexels-photo-7579179.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="card-body">
+<h3>Counselling &amp; Support Groups</h3>
+<p>Health promotion through counselling and support groups for at-risk women and families.</p>
+</div>
+</div>
+<div class="service-card">
+<img alt="Volunteer handing a box of fresh vegetables to a family" height="800" src="https://images.pexels.com/photos/6590928/pexels-photo-6590928.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="card-body">
+<h3>Food &amp; Necessities Program</h3>
+<p>Relieving poverty by providing food and basic necessities to individuals and families in need.</p>
+</div>
+</div>
+<div class="service-card">
+<img alt="Teenagers participating in a workshop with a mentor" height="800" src="https://images.pexels.com/photos/17755467/pexels-photo-17755467.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="card-body">
+<h3>Youth Workshops &amp; Recreation</h3>
+<p>Addressing youth challenges through counselling workshops and healthy recreational opportunities.</p>
+</div>
+</div>
+<div class="service-card">
+<img alt="Young woman planting a seedling in a community garden" height="800" src="https://images.pexels.com/photos/7156439/pexels-photo-7156439.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<div class="card-body">
+<h3>Mentorship &amp; Leadership</h3>
+<p>Developing mentoring and business leadership programs for youth and women.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why-section">
+<div class="container">
+<h2 class="section-title">Community Roots</h2>
+<div class="scroll-row">
+<div class="why-card">
+<h4>📍 Local &amp; focused</h4>
+<p>Rooted in Mississauga, serving local women, families, and youth with tailored support.</p>
+</div>
+<div class="why-card">
+<h4>🌱 Holistic care</h4>
+<p>Combining counselling, food aid, and youth programs under one roof.</p>
+</div>
+<div class="why-card">
+<h4>🤝 Community driven</h4>
+<p>Volunteer and donation opportunities keep our work grounded in real needs.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="gallery-section">
+<div class="container">
+<h2 class="section-title">Community Map</h2>
+<div class="masonry">
+<div class="masonry-item"><img alt="Children playing football together" height="800" src="https://images.pexels.com/photos/8813501/pexels-photo-8813501.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="masonry-item"><img alt="Volunteers preparing donations" height="800" src="https://images.pexels.com/photos/6995201/pexels-photo-6995201.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="masonry-item"><img alt="Mother hugging daughter" height="800" src="https://images.pexels.com/photos/7204167/pexels-photo-7204167.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="masonry-item"><img alt="Community outdoor gathering banquet" height="800" src="https://images.pexels.com/photos/36266152/pexels-photo-36266152.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+</div>
+</div>
+</section>
+<section class="cta-section">
+<div class="container">
+<h2>Grow with us</h2>
+<p>Whether you need support, want to volunteer, or can donate — every hand makes our garden stronger.</p>
+<div class="cta-buttons">
+<a class="btn" href="#contact">Reach out</a>
+<a class="btn btn-outline-light" href="https://www.caremasters.ca" rel="noopener" target="_blank">Source record</a>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="container">
+<h2 class="section-title">Fast Contact</h2>
+<div class="contact-grid">
+<div class="contact-details">
+<p><strong>Care Masters Women and Family Services</strong></p>
+<p>29 - 3510 SOUTH MILLWAY<br/>MISSISSAUGA, ON</p>
+<p>Phone: <a href="tel:+18847848187">(884) 784-8187</a></p>
+<p><a href="https://www.caremasters.ca" rel="noopener" target="_blank">www.caremasters.ca</a></p>
+<p style="margin-top:1.5rem; font-size:0.95rem;"><strong>What happens next?</strong><br/>Reach out via phone or the form. Tell us which program interests you — counselling, food aid, youth, or volunteering. We’ll confirm the best next step within 2 business days.</p>
+</div>
+<div>
+<form action="mailto:caremasters@example.com" class="contact-form" enctype="text/plain" method="post">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="phone" placeholder="Phone (optional)" type="text"/>
+<textarea name="message" placeholder="I'm interested in … (counselling, food program, youth, volunteering, donation)" required=""></textarea>
+<button class="btn" type="submit">Send via email</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<span>© <span id="year"></span> Care Masters Women and Family Services</span>
+<span>Photos: <a href="https://www.pexels.com/photo/woman-holding-pink-hydrangea-flower-15650070/" target="_blank">Nam Quân Nguyễn</a>, <a href="https://www.pexels.com/photo/people-talking-together-5710984/" target="_blank">Tima Miroshnichenko</a>, <a href="https://www.pexels.com/photo/a-woman-listening-7579179/" target="_blank">AI25.Studio</a>, <a href="https://www.pexels.com/photo/people-preparing-food-rations-in-the-box-6590928/" target="_blank">cottonbro</a>, <a href="https://www.pexels.com/photo/teacher-distributing-supplies-during-lesson-17755467/" target="_blank">Oleskandra Biliak</a>, <a href="https://www.pexels.com/photo/close-up-of-gardeners-holding-potted-plants-and-spatulas-7156439/" target="_blank">Gustavo Fring</a>, <a href="https://www.pexels.com/photo/children-playing-football-together-8813501/" target="_blank">Kampus Production</a>, <a href="https://www.pexels.com/photo/volunteers-preparing-donations-6995201/" target="_blank">Julia M Cameron</a>, <a href="https://www.pexels.com/photo/a-mother-hugging-her-daughter-7204167/" target="_blank">Anastasia Shuraeva</a>, <a href="https://www.pexels.com/photo/large-community-outdoor-gathering-banquet-36266152/" target="_blank">VOLKAN KARAGULLEOGLU</a> · Pexels</span>
+</div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
